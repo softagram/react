@@ -23,6 +23,7 @@ export const enableSchedulerTracing = __PROFILE__;
 export const enableSuspenseServerRenderer = false;
 export const enableStableConcurrentModeAPIs = false;
 export const warnAboutShorthandPropertyCollision = false;
+export const enableReactDOMFire = false;
 export const enableSchedulerDebugging = false;
 export const debugRenderPhaseSideEffectsForStrictMode = true;
 export const disableInputAttributeSyncing = false;
