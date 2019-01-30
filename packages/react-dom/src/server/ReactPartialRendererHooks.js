@@ -385,9 +385,12 @@ export function useLayoutEffect(
     false,
     'useLayoutEffect does nothing on the server, because its effect cannot ' +
       "be encoded into the server renderer's output format. This will lead " +
-      'to a mismatch between the initial, non-hydrated UI and the intended ' +
-      'UI. To avoid this, useLayoutEffect should only be used in ' +
-      'components that render exclusively on the client.',
+      'to a mismatch between the initial, non-hydrated UI, and the intended ' +
+      'UI. If possible, replace useLayoutEffect with useEffect which ' +
+      "doesn't block the first paint. However, if this effect must run " +
+      'before the user sees anything, you can change this component to only ' +
+      'render on the client. To learn more, see ' +
+      'https://fb.me/react-warning-server-uselayouteffect',
   );
 }
 
